@@ -1,0 +1,16 @@
+%table#movies
+  %thead
+    %tr
+      %th Title Header
+      %th Rating
+      %th Release Date
+      %th Director
+      %th Add
+  %tbody
+    - @movies.each do |movie|
+      %tr
+        %td= movie.title 
+        %td= movie.rating
+        %td= movie.release_date
+        %td= movie.director
+        %td= link_to 'Add Movie', movies_path(:title =>movie.title,:date=>movie.release_date), :method=> :post

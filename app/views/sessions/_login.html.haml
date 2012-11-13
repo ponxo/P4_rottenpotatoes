@@ -1,0 +1,7 @@
+#login
+  - if @current_user
+    %login Welcome, #{@current_user.name}!
+    %salida= link_to 'Log_Out', logout_path 
+  - else
+    %login
+      %enlace= link_to 'Log in with your twitter account', '/auth/twitter?force_login=true' 

@@ -32,6 +32,7 @@ h1.title {
   border-bottom: 4px solid gold;
   font-size: 2em;
   font-style: normal;
+  z-index: -1;
 }
 table#movies {
   margin: 10px;
@@ -61,4 +62,20 @@ form label {
   line-height: 25px;
   font-weight: bold;
   color: maroon;
+}
+login {
+  position:fixed;
+  top:1em;
+  right: 1em;
+  color :blue;
+  z-index: 100;
+
+}
+enlace{
+color:blue;
+}
+salida{
+  position:fixed;
+  top:2em;
+  right:1em;
 }
